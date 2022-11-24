@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="onInit()">
+    <div class="container">
+        <div class="header">
+            <h1>Minesweeper Online</h1>
+            <img onclick="iconClick()" src="" alt="">
+
+            <section class="hint">
+                <button onclick="hint()" class="loading-button">
+                    Hint
+                    <div class="light-bulbs">
+                       
+                    </div>
+                </button>
+            </section>
+
+            <section>
+                <button onclick="btnPress(1)" class="loading-button">Beginner</button>
+                <button onclick="btnPress(2)" class="loading-button">Medium</button>
+                <button onclick="btnPress(3)" class="loading-button">Expert</button>
+            </section>
+            
+
+
+        </div>
+
+        <div class="board-container">
+
+        </div>
+
+        <!-- <div oncontextmenu="javascript:alert('success!');return false;">
+            Lorem Ipsum
+        </div> -->
+
+        <div class="timer"></div>
+        <!-- <button class="test">heeloo</button> -->
+
+    </div>
+
+
+    <script src="js/gameUtils.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/button.js"></script>
+
+    <script src="js/game.js"></script>
+    <script src="js/mines.js"></script>
+</body>
+
+</html>

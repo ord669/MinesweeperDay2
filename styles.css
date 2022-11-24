@@ -1,0 +1,136 @@
+body {
+    background-color: black;
+    color:blue;
+    margin: 0;
+}
+  
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.board-container{
+    margin: 2em;
+}
+
+.cell {
+    width: 35px;
+    height: 25px;
+    border: 1px solid #CCC;
+    padding: 10px 5px 5px 5px;
+  
+    background-color: #EEE;
+  
+    font-size: 16px;
+    text-align: center;
+    box-shadow: inset 5px 5px 10px #FFF, inset -3px -3px 5px #777;
+    
+    cursor: pointer;
+    transition-property: background-color, box-shadow;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+  }
+
+
+.cell::selection {
+    background: transparent;
+}
+
+.cell.revealed, .cell.flagged {
+    cursor: default;
+}
+
+
+.cell-revealed{
+    background-color: #DDD;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+
+.header img{
+    width: 10%;
+}
+
+
+/* timer*/
+
+/* Hint */
+.hint img{
+    width: 30%;
+}
+
+
+
+
+
+/*button */
+
+
+
+section{
+    margin: 1em;
+    width:70%;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+  }
+
+  button{
+    text-align: center;
+    margin: 0 .5em;
+    width: 7em;
+    font-size:1.3rem;
+    border:none;
+    padding: 1rem  2rem;
+    border-radius:5px;
+      box-shadow:0px 10px 0px 0px #1d7f8a, 
+        0px 0px 10px 0px rgba(120, 120, 120, 0.4);
+    color:white;
+    background:#239dab;
+    cursor:pointer;
+    transition:all 0.16s;
+    position:relative;
+    top:0;
+  }
+  button:focus{
+    outline:none;
+  }
+  button:active{
+    box-shadow: 0px 5px 0px 0px #1d7f8a;
+    top:5px;
+  }
+  
+  .loading-button.red{
+    background:#d03651;
+    box-shadow:0px 10px 0px 0px #a72b41,
+      0px 0px 10px 0px rgba(120, 120, 120, 0.4);;
+  }
+  
+  .loading-button.red:active{
+    box-shadow: 0px 5px 0px 0px #a72b41;
+  }
+  
+  .loading-button.green{
+    background:#61a74b;
+    box-shadow:0px 10px 0px 0px #4e883c,
+      0px 0px 10px 0px rgba(120, 120, 120, 0.4);;
+  }
+  
+  .loading-button.green:active{
+    box-shadow: 0px 5px 0px 0px #4e883c;
+  }
